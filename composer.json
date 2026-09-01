@@ -11,6 +11,5 @@
     "psr-4": {
       "Veltrom\\License\\": "src/"
     }
-  },
-  "minimum-stability": "dev"
+  }
 }
