@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Starting point for a plugin's PHP-Scoper config (spec V54). Copy it into
+ * the plugin, set the prefix, and run php-scoper on the plugin's vendor/
+ * as part of the release build, so two plugins carrying different SDK
+ * versions never load one another's classes.
+ *
+ * WordPress's own functions, classes and constants must stay unprefixed:
+ * the exclusion lists come from sniccowp/php-scoper-wordpress-excludes.
+ */
+
+$wp = fn (string $file): array => json_decode((string) file_get_contents(__DIR__ . '/vendor/sniccowp/php-scoper-wordpress-excludes/generated/' . $file), true);
+
+return [
+    'prefix' => 'MyPluginPro\\Vendor',
+    'finders' => [
+        Isolated\Symfony\Component\Finder\Finder::create()->files()->in('vendor/veltrom/wp-license-sdk')->name(['*.php']),
+    ],
+    'exclude-functions' => $wp('exclude-wordpress-functions.json'),
+    'exclude-classes' => array_merge($wp('exclude-wordpress-classes.json'), ['WP_Error']),
+    'exclude-constants' => array_merge($wp('exclude-wordpress-constants.json'), ['ABSPATH', 'SODIUM_CRYPTO_SIGN_BYTES', 'SODIUM_CRYPTO_SIGN_PUBLICKEYBYTES']),
+];

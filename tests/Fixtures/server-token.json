@@ -1,0 +1,18 @@
+{
+    "issuer": "https://api.localhost",
+    "audience": "veltrom-sample-plugin",
+    "installation_id": "951623a26f8b3388802aa74907be0916ccafb0be58696a01d4c8d7b9876ea44e",
+    "now": 1790846930,
+    "token": "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCIsImtpZCI6ImsyMDI2MTAifQ.eyJpc3MiOiJodHRwczovL2FwaS5sb2NhbGhvc3QiLCJhdWQiOiJ2ZWx0cm9tLXNhbXBsZS1wbHVnaW4iLCJzdWIiOiIwMW0zdjEwMWI0MWhzZWFiM3NkZTU4d3dibiIsImp0aSI6IjAxTTNWQ1EzOFZXMUJXUjROTTRUSFlWMTZOIiwiaWF0IjoxNzkwODQ2OTMwLCJuYmYiOjE3OTA4NDY5MzAsImV4cCI6MTc5MjA1NjUzMCwic3J2IjoxNzkwODQ2OTMwLCJsaWMiOnsic3RhdHVzIjoiYWN0aXZlIiwibW9kZWwiOiJwZXJwZXR1YWwiLCJwbGFuIjoiYnVzaW5lc3MtcGVycGV0dWFsIiwiZXhwaXJlc19hdCI6bnVsbCwidXBkYXRlc191bnRpbCI6IjIwMjctMTAtMDFUMDQ6MDQ6MDBaIn0sImFjdCI6eyJpZCI6IjAxbTN2Y3EzOGphZHpnYW0wYzRhdDRuZnYzIiwiaW5zdGFsbGF0aW9uX2lkIjoiOTUxNjIzYTI2ZjhiMzM4ODgwMmFhNzQ5MDdiZTA5MTZjY2FmYjBiZTU4Njk2YTAxZDRjOGQ3Yjk4NzZlYTQ0ZSJ9LCJlbnQiOnsidXBkYXRlcyI6dHJ1ZSwicHJvIjp0cnVlfSwiZW5mIjoidXBkYXRlc19vbmx5In0.X5LF3mlaqjOUrFTb4ZiqehIwW1cKX9tEUloqBRsJLiAIly0bco05yHIfnX2aI3i0jT3vuBxDfPQosxSycty1AQ",
+    "jwks": {
+        "keys": [
+            {
+                "kty": "OKP",
+                "crv": "Ed25519",
+                "kid": "k202610",
+                "alg": "EdDSA",
+                "x": "y4SfXj-JvK0HpPRwuOScQ2YOiL7S9YfYyxzuzOTiPyw"
+            }
+        ]
+    }
+}
